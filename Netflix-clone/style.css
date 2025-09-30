@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+
+
+.main {
+  background-image: url(assets/images/bg.jpg);
+  height: 80vh;
+  position: relative;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+}
+.main .box {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.7;
+  pointer-events: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 60vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 62px;
+}
+nav div img {
+  height: 40px;
+  width: 160px;
+  position: relative;
+  z-index: 10;
+}
+.language svg {
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.language {
+  background-color: rgba(11, 11, 11, 0.8);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+.language select {
+  background-color: rgba(11, 11, 11, 0.8);
+  color: white;
+  width: 90px;
+  border: none;
+  position: relative;
+  z-index: 10;
+  padding: 3px 8px;
+  cursor: pointer;
+  appearance: none;
+}
+.language:focus-visible {
+  outline: none; /* Netflix red */
+  border: none;
+}
+
+.language select option {
+  font-family: unset;
+}
+.buttons div button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+  font-weight: 400;
+  border-radius: 5px;
+  width: 60px;
+  position: relative;
+  z-index: 10;
+  padding: 5px;
+  cursor: pointer;
+}
+.buttons div button:hover {
+  background-color: rgb(187, 8, 17);
+}
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  color: white;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 30px;
+  gap: 20px;
+}
+.hero > :first-child {
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+}
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.email input {
+  background-color: rgba(35, 35, 35, 0.5);
+  border: 0.5px solid white;
+  border-radius: 5px;
+  height: 48px;
+  width: 20vw;
+  padding: 10px;
+  box-sizing: border-box;
+  border-color: rgba(157, 157, 157, 0.9);
+  color: white;
+}
+.email input::placeholder {
+  color: rgb(198, 198, 198);
+  opacity: 1;
+}
+
+.email button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 48px;
+  padding: 10px;
+  width: 10vw;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.hero .email button:hover {
+  background-color: rgb(187, 8, 17);
+}
+.seperation {
+  background-color: rgb(48, 46, 46);
+  height: 5px;
+}
+.firstsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 5px 0px;
+}
+.firstsection div :first-child {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+  display: block;
+}
+.firstsection div :nth-child(2) {
+  font-size: 24px;
+  color: white;
+}
+.firstsection div span {
+  color: white;
+}
+.firstsection .secImg {
+  position: relative;
+}
+.firstsection .secImg img {
+  position: relative;
+  z-index: 2;
+}
+.firstsection div video {
+  position: absolute;
+  right: 90px;
+  top: 99px;
+  height: 264px;
+  width: 465px;
+  z-index: 1;
+}
+.first-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+.first-second div :first-child {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+  display: block;
+}
+.first-second div :nth-child(2) {
+  font-size: 24px;
+  color: white;
+}
+.first-second div span {
+  color: white;
+}
+.first-third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 5px 0px;
+}
+.first-third div :first-child {
+  font-family: "Martel Sans", sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+  display: block;
+}
+.first-third div :nth-child(2) {
+  font-size: 24px;
+  color: white;
+}
+.sec1Img {
+  position: relative;
+}
+.first-third .sec1Img img {
+  position: relative;
+  z-index: 2;
+}
+.first-third .sec1Img video {
+  position: absolute;
+  right: 90px;
+  top: 99px;
+  height: 264px;
+  width: 465px;
+  z-index: 1;
+}
+.first-third span {
+  color: white;
+}
+.faq {
+  padding: 30px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+}
+
+.faq h2 {
+  color: white;
+}
+.faqcont {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2d2d;
+  width: 80vw;
+  margin: auto;
+  height: 75px;
+}
+.faqcont:hover {
+  background-color: #414141;
+  transition: background-color 500ms ease;
+}
+.faqcont span {
+  padding: 0 20px;
+}
+.faqcont svg {
+  padding: 0 20px;
+  color: white;
+  cursor: pointer;
+}
+footer {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
+}
+footer div:first-child {
+  color: #b3b3b3;
+  padding: 30px 0;
+}
+.foot a {
+  color: #b3b3b3;
+  font-size: 13px;
+}
+.foot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.footlang {
+  background-color: rgba(11, 11, 11, 0.8);
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px 5px;
+  margin: 20px 0px;
+  width: 100px;
+  height: 30px;
+}
+.footlang svg {
+  color: white;
+}
+.footlang select {
+  background-color: rgba(11, 11, 11, 0.8);
+  color: white;
+  width: 90px;
+  border: none;
+  position: relative;
+  z-index: 10;
+  padding: 3px 8px;
+  cursor: pointer;
+  appearance: none;
+}
+.final {
+  color: #b3b3b3;
+  font-size: 13px;
+  margin: 30px 0;
+}
+footer div span {
+  color: #b3b3b3;
+  font-size: 10px;
+}
+.searchcont {
+  margin: 70px auto;
+}
+.searchcont div:first-child {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.faqemail {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+.faqemail input {
+  background-color: rgba(35, 35, 35, 0.5);
+  border: 0.5px solid white;
+  border-radius: 5px;
+  height: 50px;
+  width: 35vw;
+  padding: 10px;
+  box-sizing: border-box;
+  border-color: rgba(157, 157, 157, 0.9);
+  color: white;
+}
+.faqemail input::placeholder {
+  color: rgb(198, 198, 198);
+  opacity: 1;
+}
+
+.faqemail button {
+  background-color: rgb(229, 9, 20);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  padding: 10px;
+  width: 15vw;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.faqemail button:hover {
+  background-color: rgb(187, 8, 17);
+}
+@media screen and (max-width: 450px) {
+  nav {
+    max-width: 80vw;
+    margin: auto;
+  }
+  nav div img {
+    height: 30px;
+    width: 80px;
+    position: relative;
+    z-index: 10;
+  }
+  .email {
+    flex-direction: column;
+  }
+  .buttons {
+  }
+  .language select {
+    width: 70px;
+  }
+  .language select option {
+    font-size: smaller;
+  }
+  .email input {
+    width: 70vw;
+  }
+  .email button {
+    width: 30vw;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .hero > :first-child {
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
+  .firstsection {
+    flex-direction: column;
+  }
+  .firstsection .secImg img {
+    position: relative;
+    z-index: 2;
+    width: 300px;
+  }
+  .firstsection div :first-child {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .firstsection div :nth-child(2) {
+    font-size: 12px;
+    text-align: center;
+  }
+  .firstsection div video {
+    position: absolute;
+    right: 43px;
+    top: 8px;
+    height: 220px;
+    width: 219px;
+    z-index: 1;
+  }
+  .first-second {
+    flex-direction: column;
+  }
+  .first-second .secImg img {
+    width: 300px;
+  }
+  .first-second div {
+    padding: 10px;
+  }
+  .first-second div :first-child {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.5;
+    
+  }
+  .first-second div :nth-child(2) {
+    font-size: 12px;
+    text-align: center;
+  }
+  .first-third {
+    flex-direction: column;
+  }
+  .first-third :first-child {
+    padding: 10px;
+  }
+  .first-third div :first-child {
+    font-size: 28px;
+    text-align: center;
+  }
+  .first-third div :nth-child(2) {
+    font-size: 12px;
+    text-align: center;
+  }
+  .first-third .sec1Img img {
+    width: 300px;
+  }
+  .first-third .sec1Img video {
+    right: 43px;
+    top: 2px;
+    height: 232px;
+    width: 230px;
+  }
+  .faqcont {
+    height: 58px;
+  }
+  .faqcont svg {
+    width: 20px;
+  }
+  .faqcont span {
+    font-size: x-small;
+  }
+  .searchcont > :first-child {
+    font-size: x-small;
+  }
+  .faqemail {
+    flex-direction: column;
+    align-items: center;
+  }
+  .faqemail input {
+    width: 60vw;
+  }
+  .faqemail button {
+    width: 25vw;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .foot{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .foot a{
+    font-size: 10px;
+  }
+}
