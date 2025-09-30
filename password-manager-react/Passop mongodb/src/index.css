@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.mycontainer {
+  @apply container mx-auto;
+}
+@media (min-width: 768px) {
+  .mycontainer {
+    @apply px-40;
+  }
+}
