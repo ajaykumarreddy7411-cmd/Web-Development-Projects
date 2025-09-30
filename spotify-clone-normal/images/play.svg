@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64">
+  <!-- Green circular background -->
+  <circle cx="12" cy="12" r="12" fill="#1DB954"/>
+  <!-- Centered, big play icon with black fill and rounded corners -->
+  <polygon points="9,7 9,17 17,12"
+           stroke="#000"
+           stroke-width="2"
+           stroke-linejoin="round"
+           stroke-linecap="round"
+           fill="black"/>
+</svg>
