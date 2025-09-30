@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Book</title>
+  </head>
+  <body class="bg-black">
+    <div class="relative">
+      <img
+        src="https://res-3.cloudinary.com/fieldfisher/image/upload/f_jpg,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05"
+        class="fixed top-0 left-0 w-full h-full object-cover brightness-[0.4] contrast-125"
+        alt=""
+      />
+      <nav
+        class="text-white text-center font-bold p-3 text-2xl backdrop-blur-md sticky top-0 z-20 bg-black/50"
+      >
+        <div class="main text-white">Phone Book</div>
+      </nav>
+      <div
+        class="container backdrop-blur-lg md:w-[70vw] m-auto mt-1 rounded-2xl min-h-[80vh] p-5 flex flex-col gap-2 shadow-2xl shadow-black z-10 relative"
+      >
+        <div class="flex justify-between">
+          <div class="md:w-1/2 pr-2 w-full">
+            <form id="phone-details" class="flex flex-col gap-1">
+              <h1
+                class="font-bold text-[var(--color-25)] text-xl shadow-black shadow-2xl text-center"
+              >
+                Enter Phone details
+              </h1>
+            
+                <label for="phname" class="text-[var(--color-25)]"
+                  >Enter Name</label
+                >
+               
+              
+              <input
+                type="text"
+                id="recname"
+                name="phname"
+                class="bg-gray-100 rounded-md h-8 p-1 "
+                required
+              />
+              <span id="name-error" class="text-sm text-red-500 hidden"></span>
+              <label for="phno" class="text-[var(--color-25)]"
+                >Enter Number</label
+              >
+              <input
+                type="text"
+                id="recnumber"
+                name="phno"
+                class="bg-gray-100 rounded-md h-8 p-1 "
+                required
+              />
+              <span id="phno-error" class="text-sm text-red-500 hidden"></span>
+              <label for="phemail" class="text-[var(--color-25)]"
+                >Enter Email</label
+              >
+              <input
+                type="email"
+                id="recemail"
+                name="phemail"
+                class="bg-gray-100 rounded-md h-8 p-1 "
+              />
+              <span id="email-error" class="text-sm text-red-500 hidden"></span>
+              <div class="main-buttons mt-1">
+                <button
+                  class="final-save w-fit rounded-2xl bg-transparent text-white p-2 hover:bg-gray-800 cursor-pointer shadow-2xl"
+                >
+                  Save
+                </button>
+                <button
+                  class="final-clear w-fit rounded-2xl bg-transparent text-white p-2 hover:bg-gray-800 cursor-pointer"
+                >
+                  Clear
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="md:w-1/2 hidden md:block">
+            <img
+              class="w-full rounded-2xl brightness-50 shadow-2xl h-full"
+              src="https://images.cryptodaily.co.uk/space/kj8zUsLKP1NJAS0YpqSjBaNYdbjarAuSGgxtQJrH.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="line bg-green-900 h-0.5 rounded-2xl my-2"></div>
+        <div
+          class="display backdrop-blur-2xl rounded-2xl min-h-[45vh] p-2 text-white"
+        >
+          <h1 class="text-2xl font-bold text-white text-center">Contacts</h1>
+          <ul class="list-phones flex flex-col"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

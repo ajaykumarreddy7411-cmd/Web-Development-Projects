@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+:root{
+  
+   --color-60: #0077b6;
+  --color-30: #00b4d8;
+  --color-25: white;
+  --color-10: #90e0ef;
+}
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar hidden state */
+.nav-hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* faster hide */
+}
+
+/* Navbar visible state */
+nav {
+  transition: opacity 0.1s linear; /* quicker reaction */
+}
